@@ -2,13 +2,17 @@
 /*
 Plugin Name: KO: Custom Functions (Divi 5)
 Author: <a href="mailto:6822858@kevinoneill.us">KO</a>
-Version: 2.9.3
+Version: 2.9.4
 Author URI: https://kevinoneill.us
 Description: Add custom functions and filters by editing ko-custom-functions.php.
 Requires at least: 6.7
 Requires PHP: 7.4
 */
 /* Start Adding Functions Below this Line */
+
+/* Administrator-only account email changes */
+require_once __DIR__ . '/includes/email-restriction.php';
+/* END Administrator-only account email changes */
 
 /////////////// Add typeface to login screen /////////////////
 function ko_cf_enqueue_login_font() {
